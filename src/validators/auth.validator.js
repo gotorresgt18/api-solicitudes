@@ -4,7 +4,7 @@ import { body } from 'express-validator';
 
 //#region VALIDACIONES AL MODELO EN CADA ENPOINT
 
-// 
+// Validaciones al modelo para el login
 export const loginValidador = [
   body('username')
       .notEmpty().withMessage('El usuario es obligatorio. Para pruebas es "admin"'),

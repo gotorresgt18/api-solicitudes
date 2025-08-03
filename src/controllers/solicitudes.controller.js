@@ -1,7 +1,7 @@
 //#region IMPORTACIONES
 import { exportarACsv } from "../utils/exportCsv.js";
 import { PrismaClient } from "@prisma/client";
-//#region 
+//#endregion 
 
 // Client de Prisma para interactuar con la base de datos.
 const prisma = new PrismaClient();

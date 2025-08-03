@@ -1,3 +1,4 @@
+//#region IMPORTACIONES
 import express from 'express';
 import cors from 'cors';
 import solicitudesRoutes from './src/routes/solicitudes.routes.js';
@@ -7,6 +8,7 @@ import { authenticateJWT } from './src/middlewares/authenticateJWT.js';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './swagger.js';
 //import swaggerFile from './swagger-output.json' assert { type: 'json' }; // Importar el archivo generado por swagger-autogen
+//#endregion
 
 const app = express();
 
@@ -29,10 +31,3 @@ app.use('/solicitudes', authenticateJWT, solicitudesRoutes);
 app.use(errorHandler);
 
 export default app;
-
-// //puerto de escucha
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`Servidor corriendo en http://localhost:${PORT}`);
-//     console.log(`Documentación Swagger disponible en http://localhost:${PORT}/api-docs`);
-// });
