@@ -78,13 +78,13 @@ npm install
 
 ### 3. Configurar el entorno
 
-En el archivo **.env** en la raiz puedes cambiar la clave secreta para generar los tokens 
+Crea un archivo **.env** en la raiz y agrega el siguiente parametro. Cambiar la clave secreta para generar los tokens.
 
 ```bash
 JWT_SECRET="TU_CLAVE_SECRETA"
 ```
 
-### 4. Crear base de datos Y aplicar migraciones | y crear usuario por default (admin)
+### 4. Crear base de datos y aplicar migraciones
 
 ```bash
 npx prisma migrate dev --name init
