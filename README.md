@@ -64,7 +64,7 @@ Se eligió **SQLite** en lugar de una solución en la nube como **DynamoDB** par
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/api-solicitudes.git
+git clone https://github.com/gotorresgt18/api-solicitudes.git
 cd api-solicitudes
 ```
 
